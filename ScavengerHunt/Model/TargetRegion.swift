@@ -14,6 +14,6 @@ struct TargetRegion {
     let radius: CLLocationDistance
     let identifier: String
     let question: String
-    let answer: String
+    let answer: any RegexComponent
     var completed: Bool
 }

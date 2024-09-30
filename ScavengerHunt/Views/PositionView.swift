@@ -83,7 +83,7 @@ struct PositionView: View {
                 TextField("What is the answer to the question?", text: $currentAnswer)
                 
                 Button {
-                    if currentAnswer == targetsViewModel.getCurrentTarget().answer {
+                    if currentAnswer.contains( targetsViewModel.getCurrentTarget().answer) {
                         
                         // Mark current target as completed
                         targetsViewModel.targets[targetsViewModel.currentTargetIndex].completed = true
