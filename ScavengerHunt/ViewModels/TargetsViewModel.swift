@@ -41,7 +41,7 @@ class TargetsViewModel {
             radius: 8,
             identifier: "Ryder House",
             question: "What house has a polar bear as their mascot?",
-            answer: "Ryder",
+            answer: /ryder/.ignoresCase(),
             completed: false
         ),
         
@@ -51,7 +51,7 @@ class TargetsViewModel {
             radius: 8,
             identifier: "Gate house",
             question: "the tiny house when you drive onto campus - what colour is the fence?",
-            answer: "Green",
+            answer: /green/.ignoresCase(),
             completed: false
         ),
         
@@ -61,17 +61,17 @@ class TargetsViewModel {
             radius: 8,
             identifier: "theater lobby",
             question: "Where are we going to see the performances in the school?",
-            answer: "Theater",
+            answer: /theater/.ignoresCase(),
             completed: false
         ),
         
-        TargetRegion(//44.44050° N, 78.26741° W
+        TargetRegion( //44.44050° N, 78.26741° W
             latitude: 44.44050,
             longitude: -78.26741,
             radius: 8,
             identifier: "Parent House",
             question: "Which is the newest girl's house?",
-            answer: "Parent",
+            answer: /parent/.ignoresCase(),
             completed: false
         ),
 
